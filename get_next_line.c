@@ -6,7 +6,7 @@
 /*   By: rgodtsch <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/30 19:10:07 by rgodtsch          #+#    #+#             */
-/*   Updated: 2022/12/08 15:22:24 by rgodtsch         ###   ########.fr       */
+/*   Updated: 2022/12/08 16:41:02 by rgodtsch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,7 @@ char	*gnl_read(int fd, char *stash)
 		buffer[bytes_readed] = 0;
 		stash = ft_gnl_strjoin(stash, buffer);
 		if (ft_gnl_strchr(buffer) != -1)
-			break ;
+			break;
 	}
 	free(buffer);
 	return (stash);
@@ -94,7 +94,7 @@ char	*gnl_rm_old_line(char *buffer)
 	return (str);
 }
 
-char	*ft_gnl_remove_free(char *buffer)
+char	*gnl_remove_free(char *buffer)
 {
 	free(buffer);
 	return (NULL);

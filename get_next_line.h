@@ -6,7 +6,7 @@
 /*   By: rgodtsch <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/07 18:12:31 by rgodtsch          #+#    #+#             */
-/*   Updated: 2022/12/08 15:21:43 by rgodtsch         ###   ########.fr       */
+/*   Updated: 2022/12/08 16:41:07 by rgodtsch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,6 @@ int		ft_gnl_strchr(char *str);
 char	*ft_gnl_strjoin(char *line, char *buff);
 size_t	ft_strlen(char *str);
 char	*ft_strndup(char *str, size_t end);
-char	*ft_gnl_remove_free(char *buffer);
+char	*gnl_remove_free(char *buffer);
 
 #endif
